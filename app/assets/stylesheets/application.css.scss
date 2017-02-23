@@ -13,3 +13,56 @@
  *= require_tree .
  *= require_self
  */
+ @import 'bootstrap-sprockets';
+ @import "bootstrap";
+
+ .navbar{
+   background: black;
+   text-align: right;
+   padding-right: 10px;
+   padding-top: 10px;
+   color: white;
+   border-bottom: 2px solid blue;
+ }
+
+.navbar .home-button{
+   float: left;
+   padding-left: 10px;
+
+
+ }
+
+.navbar a {
+  color: #FFFFFF;
+}
+
+.navbar a:hover{
+  color:blue;
+  text-decoration: none;
+}
+
+body{
+  background: #e8eaed;
+}
+
+ .sign_up {
+   background: white;
+   width: 400px;
+   height: 400px;
+   text-align: center;
+   border: 2px solid blue;
+   border-radius: 25px;
+   margin: auto;
+
+
+ }
+
+ .sign_up .actions {
+   padding-top: 5px;
+
+
+ }
+
+ .sign_up .shared_links {
+   padding-top: 10px;
+ }

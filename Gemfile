@@ -26,3 +26,6 @@ source 'https://rubygems.org'
  gem 'turbolinks'
  # devise is used to authenticate users
  gem 'devise'
+
+ #bootstrap is used for styling the page
+ gem 'bootstrap-sass'

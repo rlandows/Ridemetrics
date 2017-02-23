@@ -1,0 +1,2 @@
+module RidemetricsHelper
+end
