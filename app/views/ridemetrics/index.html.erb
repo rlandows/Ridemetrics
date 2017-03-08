@@ -1,2 +1,16 @@
-<h1>Ridemetrics#index</h1>
-<p>Find me in app/views/ridemetrics/index.html.erb</p>
+<h1 id="index_header">Index</h1>
+
+
+
+
+     <% @ridemetrics.each do |ridemetric| %>
+     <div class="sign_up">
+      <h2> Ridemetric ID #<%= ridemetric.id %> </h2>
+       <p> Start Lat: <%=ridemetric.start_lat %></p>
+       <p> End Lat: <%=ridemetric.end_lat %></p>
+       <p> Start Long: <%=ridemetric.start_long %></p>
+       <p> End Long: <%=ridemetric.end_long %></p>
+      </div>
+      <br>
+     <% end %>
+  <p>   <%= @lyft_cost[0]%> </p>

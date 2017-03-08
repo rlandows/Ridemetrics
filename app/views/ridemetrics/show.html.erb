@@ -1,0 +1,19 @@
+<div class="sign_up">
+<h1>Ridemetrics</h1>
+<% @ridemetrics.each do |ridemetric| %>
+  <% if ridemetric.id == (@ridemetrics.length) %>
+ <h2>Uber</h2>
+  <!-- <p> Start Lat: <%=ridemetric.start_lat %></p>
+  <p> End Lat: <%=ridemetric.end_lat %></p>
+  <p> Start Long: <%=ridemetric.start_long %></p>
+  <p> End Long: <%=ridemetric.end_long %></p> -->
+
+  <% end %>
+
+<% end %>
+<p>Price Estimate: $<%= @price[0].low_estimate %></p>
+<p>Time Estimate: <%= (@time[0].estimate)/60%> min </p>
+<h2>Lyft</h2>
+<p>Price Estimate: $<%= @cost_min %></p>
+<p>Time Estimate: <%= @lyft_eta2 %> min</p>
+</div>

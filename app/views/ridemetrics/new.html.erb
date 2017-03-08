@@ -1,0 +1,25 @@
+
+<h1>Enter a new Ridemetrics estimate here</h1>
+<%= form_for  @ridemetrics do |f| %>
+      <div class="form-group">
+        <%= f.label :start_lat %>
+        <%= f.number_field :start_lat, class: 'form-control', placeholder: "Enter Your starting latitude", step: :any %>
+      </div>
+
+      <div class="form-group">
+        <%= f.label :end_lat %>
+        <%= f.number_field :end_lat, class: 'form-control', placeholder: "Enter your ending latitude" , step: :any %>
+      </div>
+
+      <div class="form-group">
+        <%= f.label :start_long %>
+        <%= f.number_field :start_long, class: 'form-control', placeholder: "Enter your starting longitude", step: :any %>
+      </div>
+
+      <div class="form-group">
+        <%= f.label :end_long %>
+        <%= f.number_field :end_long, class: 'form-control', placeholder: "Enter your ending longitude" , step: :any%>
+      </div>
+
+      <%= f.submit "Submit", class: 'btn btn-success' %>
+<%end%>

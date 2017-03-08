@@ -29,3 +29,9 @@ source 'https://rubygems.org'
 
  #bootstrap is used for styling the page
  gem 'bootstrap-sass'
+ #used to make requests to the uber api
+ gem 'uber-ruby', require: 'uber'
+#used to requests to the lyft api
+gem 'lyft', require: 'lyft'
+gem 'httparty'
+gem 'geocoder'

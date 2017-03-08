@@ -1,7 +1,18 @@
 Rails.application.routes.draw do
-  root 'ridemetrics#index'
 
+
+
+
+
+  get 'show' => 'ridemetrics#show'
+  get 'new' => 'ridemetrics#new'
+  root 'ridemetrics#index'
+  resources :ridemetrics
+  resources :coordinates
+  resources :locations
+  resources :endlocations
   devise_for :users
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

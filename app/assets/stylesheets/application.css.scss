@@ -23,6 +23,7 @@
    padding-top: 10px;
    color: white;
    border-bottom: 2px solid blue;
+   border-radius:0;
  }
 
 .navbar .home-button{
@@ -65,4 +66,8 @@ body{
 
  .sign_up .shared_links {
    padding-top: 10px;
+ }
+
+ #index_header {
+   text-align: center;
  }

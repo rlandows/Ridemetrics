@@ -1,0 +1,13 @@
+<%= form_tag locations_path do %>
+<% @location.each do |location| %>
+  <%= fields_for 'locations[]', location do |f| %>
+    <div class="form-group">
+        <%= f.label :address %><br>
+        <%= f.text_field :address, class: 'form-control' %>
+    </div>
+  <% end %>
+<% end %>
+  <div class="actions">
+    <%= submit_tag "Submit" , class: 'btn btn-success' %>
+  </div>
+<% end %>

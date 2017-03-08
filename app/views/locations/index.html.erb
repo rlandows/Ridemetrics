@@ -1,0 +1,15 @@
+<h1 id="index_header">Index</h1>
+
+
+
+
+     <% @locations.each do |location| %>
+     <div class="sign_up">
+      <h2> Ridemetric ID #<%= location.id %> </h2>
+       <p> Start Lat: <%=location.latitude %></p>
+       <p> Start Long: <%=location.longitude %></p>
+       <p> Address: <%=location.address %></p>
+
+      </div>
+      <br>
+     <% end %>
